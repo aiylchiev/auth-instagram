@@ -1,0 +1,27 @@
+.header {
+    background: white;
+    width: 350px;
+    height: 550px;
+    border: 1px solid #000000;
+    margin: 0 auto;
+}
+.footer {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer h3 {
+    text-align: center;
+}
+.foterr {
+    text-align: center;
+}
+@media screen and (max-width:250px) {
+    .header {
+        width:100%;
+    }
+    .footer {
+        width: 100%;
+    }
+}

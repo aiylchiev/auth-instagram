@@ -1,0 +1,117 @@
+.Form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.email {
+    width: 300px;
+    height: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.email input {
+    font-size: 16px;
+    width: 296px;
+    height: 43px;
+    border: none;
+    color: rgb(61, 52, 52);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.email inpuT::placeholder {
+    font-size: 16px;
+}
+.email input:active {
+    border: none;
+}
+.email input:focus {
+    background-color:rgb(228, 234, 245);
+}
+.password {
+    display: flex;
+    width: 300px;
+    height: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.email.invalid input  {
+    border:1px solid red;
+    background: #fbdada;
+}
+.password  input {
+    height: 43px;
+    width: 300px;
+    border: none;
+}
+.password input:focus {
+    background-color:rgb(228, 234, 245);
+}
+.password button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.next {
+    display: flex;
+    justify-content: center;
+}
+.next button{
+    margin-top: 30px;
+    border-radius: 4px;
+    width: 300px;
+    height: 30px;
+    border: none;
+    background: rgb(9, 149, 241);
+    color: white;
+    cursor: pointer;
+    font-size:15px;
+}
+button:disabled,
+button:focus:disabled,
+button:hover:disabled,
+button:active:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+.green {
+    background: green;
+    color: white;
+    font-size: 15px;
+}
+.red {
+    text-align:center;
+    background: green;
+    color: white;
+    font-size: 15px;
+}
+@media screen and (max-width:150px) {
+    .email {
+        width: 100%;
+    }
+    label {
+        width: 100%;
+    }
+    .email input {
+        width: 100%;
+    }
+    .password {
+        width: 100%;
+    }
+    .password input {
+        width: 100%;
+    }
+    .password button {
+        width: 100%;
+    }
+    .next button {
+        width: 100%;
+    }
+}
